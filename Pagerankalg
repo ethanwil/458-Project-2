@@ -26,7 +26,7 @@ end
 
 order = 1:1:1000;
 x_ordering = [order', x];
-final = sortrows(x_ordering,2);
+final = sortrows(x_ordering,2,'descend');
 
 function A = create_A(M,r,c,col_sums)
     for i= 1:r
